@@ -1,0 +1,79 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --white: #fff;
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--dark-cyan);
+  position: relative;
+  overflow: hidden;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.8rem;
+}
+
+.top-pattern {
+  position: absolute;
+  top: 0;
+  left: -978px;
+  transform: translate(50%, -50%);
+}
+
+.bottom-pattern {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, 50%);
+}
+
+.card {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  background-color: var(--white);
+  max-width: 35rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 2rem 2rem 
+
+  .user-info {
+    position: relative;
+    .profile {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 10rem;
+      border-radius: 50%;
+      shape-outside: circle(50%);
+      border: 1rem solid var(--white);
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+    text-align: center;
+    .upper-info {
+      margin-top: 6rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .upper-info-name {
+        font-weight: 700;
+        margin: 1rem;
+      }
+      .upper-info-age {
+        color: var(--dark-gray);
+        margin: 1rem;
+      }
+    }
+
+    .lower-info {
+      font-weight: 700;
+    }
+  }
+}
