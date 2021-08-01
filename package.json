@@ -1,0 +1,19 @@
+{
+  "name": "profile-card-component-main",
+  "version": "1.0.0",
+  "description": "A challenge by Frontend Mentor",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --no-source-map --watch sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kuntash/Profile_Card.git"
+  },
+  "author": "Kunga Tashi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kuntash/Profile_Card/issues"
+  },
+  "homepage": "https://github.com/Kuntash/Profile_Card#readme"
+}
