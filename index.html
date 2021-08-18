@@ -15,39 +15,58 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-<img class = 'top-pattern' src = '/images/bg-pattern-top.svg'>
-<img class = 'bottom-pattern' src = '/images/bg-pattern-bottom.svg'>
-  
-<div class = "card">
-  <div class = "card-top">
-     <img src="/images/bg-pattern-card.svg" alt="">
-  </div>
-  <div class = "user-info">
-    <img class = "profile" src="/images/image-victor.jpg" alt="">
-    <div class = "upper-info">
-      <div class = "upper-info-name">Victor Crest</div>
-      <div class = "upper-info-age">26</div>
+<body>  
+  <main class = "container">
+    <div class = "card">
+      <div class = "card__upper">
+        <img src = "images/bg-pattern-card.svg">
+      </div>
+      <div class = "card__lower">
+        <img class = "card__lower--profile" src = "images/image-victor.jpg">
+        <div class = "card__lower__user1">
+          <div class = "card__lower__user1--nameAge">
+            <span class = "bold">
+              Victor Crest
+            </span>
+            <span class = "gray">
+              26
+            </span>
+          </div>
+          <div class = "card__lower__user1--address">
+            <span class = "gray">
+              London
+            </span>
+          </div>
+        </div>
+        <div class = "card__lower__user2">
+          <div class = "card__lower__user2--box">
+            <span class = "bold">
+              80K
+            </span>
+            <span class = "gray">
+              Followers
+            </span>
+          </div>
+          <div class = "card__lower__user2--box">
+            <span class = "bold">
+              803K
+            </span>
+            <span class = "gray">
+              Likes
+            </span> 
+          </div>
+          <div class = "card__lower__user2--box">
+            <span class = "bold">
+              1.4K
+            </span>
+            <span class = "gray">
+              Photos
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class = "lower-info">
-      London
-    </div>
-  </div>
-
-  </div>
-</div>
-  
-  
-  
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Kunga Tashi</a>.

@@ -1,17 +1,96 @@
-/* Error: Expected digit.
- *    ,
- * 43 |   .user-info {
- *    |    ^
- *    '
- *   sass\main.scss 43:4  root stylesheet */
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --white: #fff;
+  --dark-gray: hsl(0, 0%, 59%);
+  --dark-grayish-blue: hsla(227, 10%, 46%, 0.404);
+  --dark-saturated-blue: hsla(229, 23%, 23%, 0.438);
+}
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected digit.\a    \2577 \a 43 \2502    .user-info {\d\a    \2502     ^\a    \2575 \a   sass\\main.scss 43:4  root stylesheet";
+html {
+  font-size: 62.5%;
+}
+
+.bold {
+  font-weight: 700;
+  color: black;
+}
+
+.gray {
+  font-weight: 400;
+  color: var(--dark-gray);
+  font-size: 0.8rem;
+}
+
+body {
+  background: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg"), var(--dark-cyan);
+  background-position: -19.7916667vw -69.5833333vh, 50.1388889vw 51.8055556vh;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  box-shadow: 0 2rem 5rem 0.1rem var(--dark-grayish-blue), 0 2rem 5rem 0.1rem var(--dark-saturated-blue);
+  overflow: hidden;
+  max-height: 37.4rem;
+  border-radius: 1rem;
+  background-color: var(--white);
+}
+.card__lower {
+  font-size: 1.8rem;
+  position: relative;
+}
+.card__lower--profile {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 0.5rem white;
+  border-radius: 50%;
+  shape-outside: circle(50%);
+}
+.card__lower__user1 {
+  padding-top: 7.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card__lower__user1--nameAge {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem !important;
+}
+.card__lower__user1--nameAge .bold {
+  margin-right: 0.9rem;
+}
+.card__lower__user1--nameAge .gray {
+  font-size: 1.4rem;
+}
+.card__lower__user1--address .gray {
+  font-size: 1.4rem;
+}
+.card__lower__user2 {
+  margin-top: 2.6rem;
+  border-top: solid 0.01rem var(--dark-gray);
+  padding: 2.7rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.card__lower__user2--box {
+  display: flex;
+  flex-direction: column;
+}
+.card__lower__user2--box .gray {
+  letter-spacing: 1.5px;
 }
