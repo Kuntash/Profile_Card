@@ -26,8 +26,8 @@ html {
 }
 body {
   height: 100vh;
-  background: url("/images/bg-pattern-top.svg"),
-    url("/images/bg-pattern-bottom.svg"), var(--dark-cyan);
+  background: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg"), var(--dark-cyan);
   background-position: -19.7916667vw -69.5833333vh, 50.1388889vw 51.8055556vh;
   background-repeat: no-repeat;
   position: relative;
