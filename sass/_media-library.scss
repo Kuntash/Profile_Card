@@ -1,5 +1,13 @@
-@mixin media-library() {
-  @media (max-width: 375px) {
-    @content;
+@mixin media-library($break-point) {
+  @if ($break-point == -tab) {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+
+  @if ($break-point == -phone) {
+    @media (max-width: 376px) {
+      @content;
+    }
   }
 }

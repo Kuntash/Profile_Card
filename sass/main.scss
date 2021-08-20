@@ -25,6 +25,7 @@ html {
   font-size: 0.8rem;
 }
 body {
+  height: 100vh;
   background: url("/images/bg-pattern-top.svg"),
     url("/images/bg-pattern-bottom.svg"), var(--dark-cyan);
   background-position: -19.7916667vw -69.5833333vh, 50.1388889vw 51.8055556vh;
@@ -32,13 +33,12 @@ body {
   position: relative;
   overflow: hidden;
   font-family: "Kumbh Sans", sans-serif;
-}
-
-.container {
-  position: absolute;
-  top: 50vh;
-  left: 50vw;
-  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include media-library(-phone) {
+    background-position: -204.8vw -101.7991vh, 43.4666667vw 56.071964vh;
+  }
 }
 
 .card {
@@ -49,6 +49,9 @@ body {
   border-radius: 1rem;
   background-color: var(--white);
 
+  @include media-library(-phone) {
+    max-width: 32.25rem;
+  }
   &__lower {
     font-size: 1.8rem;
     position: relative;
@@ -91,7 +94,7 @@ body {
     &__user2 {
       margin-top: 2.6rem;
       border-top: solid 0.01rem var(--dark-gray);
-      padding: 2.7rem 0;
+      padding: 1.9rem 0;
       display: flex;
       justify-content: space-around;
       align-items: center;
